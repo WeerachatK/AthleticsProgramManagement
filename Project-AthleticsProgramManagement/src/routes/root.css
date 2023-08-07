@@ -1,0 +1,12 @@
+.MenuBox {
+    width: 216px;
+    height: 80px;
+    flex-shrink: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+  }
