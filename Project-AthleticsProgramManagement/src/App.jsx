@@ -1,36 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-
-import Home from './conponents/Navbar/index';
-
+import Index from './components/login';
+import Root from './routes/root';
+import { Routes, Route } from "react-router-dom";
+import './App.css'
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
-        </nav>
+    <>
+      <Routes>
+        {/* <Route path='/' element={
+          <nav><Root/></nav>
+        } /> */}
+        <Route path='/' element={
+          <nav><Index/></nav>
+        } />
+      </Routes>
 
-        <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+    </>
+  )
 }
-
-export default App;
-
-
-
-
-
+export default App
