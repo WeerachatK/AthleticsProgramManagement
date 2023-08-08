@@ -1,5 +1,5 @@
 import React from 'react';
-import Index from './components/login';
+import Index from './components/homePage/componants/sliderShow';
 import Root from './routes/root';
 import { Routes, Route } from "react-router-dom";
 import './App.css'
