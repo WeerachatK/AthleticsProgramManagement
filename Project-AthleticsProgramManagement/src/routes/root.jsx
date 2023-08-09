@@ -3,7 +3,7 @@ import './root.css'
 
 function Root() {
   return (
-    <nav className='Navbar w-screen h-[100px] bg-[#D9D9D9] sticky top-0 pt-[12px] px-[24px] flex flex-row'>
+    <nav className='Navbar w-screen h-[100px] bg-[#D9D9D9] sticky top-0 pt-[12px] px-[24px] flex flex-row z-10'>
       <div class="flex flex-col justify-center w-[122px] h-[74px] flex-shrink-0 bg-[#525252]">
         <label class="text-center font-inter text-base font-normal text-[#fff] ">
           LOGO

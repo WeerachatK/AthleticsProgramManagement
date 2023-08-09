@@ -26,14 +26,14 @@ function SlideShow() {
   }, [index]);
 
   return (
-    <div className="mx-auto overflow-hidden max-w-md">
+    <div className="mx-auto overflow-hidden w-[1137px] h-[280px] mt-[44px]">
       <div
         className="whitespace-nowrap transition-transform duration-1000"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {colors.map((backgroundColor, idx) => (
           <div
-            className="inline-block h-96 w-full rounded-xl"
+            className="inline-block h-[280px] w-full rounded-xl"
             key={idx}
             style={{ backgroundColor }}
           ></div>
@@ -44,7 +44,7 @@ function SlideShow() {
         {colors.map((_, idx) => (
           <div
             key={idx}
-            className={`h-5 w-5 rounded-full cursor-pointer ${index === idx ? "bg-purple-600" : "bg-gray-400"}`}
+            className={`h-[10px] w-[10px] rounded-full cursor-pointer ${index === idx ? "bg-[#000000]" : "bg-[#c4c4c4]"}`}
             onClick={() => setIndex(idx)}
           ></div>
         ))}
