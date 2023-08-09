@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './root.css'
+import { useSelector } from 'react-redux';
 
 function Root() {
+  const display = useSelector(state => state.display);  
   return (
-    <nav className='Navbar w-screen h-[100px] bg-[#D9D9D9] sticky top-0 pt-[12px] px-[24px] flex flex-row z-10'>
+    <nav className='Navbar w-screen h-[100px] bg-[#D9D9D9] sticky top-0 pt-[12px] px-[24px] flex flex-row z-10 '>
       <div class="flex flex-col justify-center w-[122px] h-[74px] flex-shrink-0 bg-[#525252]">
         <label class="text-center font-inter text-base font-normal text-[#fff] ">
           LOGO
@@ -11,15 +14,15 @@ function Root() {
       </div>
 
       <div className='Menu flex flex-row items-end pl-[100px]'>
-        <div class="Home MenuBox">
+        <Link to="/" class={`Home MenuBox ${display === 'home' ? 'bg-white' : ''}`}>
           Home
-        </div>
-        <div class="Competition MenuBox">
+        </Link>
+        <Link to="/competition" class={`Competition MenuBox ${display === 'schedule' ? 'bg-white' : ''}`}>
           Competition
-        </div>
-        <div class="Result MenuBox">
+        </Link>
+        <Link to="/result" class={`Result MenuBox ${display === 'result' ? 'bg-white' : ''}`}>
           Result
-        </div>
+        </Link>
       </div>
 
       <div className='Profile flex flex-row items-center justify-end w-full'>
