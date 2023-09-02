@@ -12,6 +12,7 @@ function LoginPage() {
         <div className='Tnbox2 h-[8rem] w-[8rem] bg-orange'></div>
         <div className='Inbox h-[8rem] w-[8rem] bg-[#002880]'></div>
         <div className='Tnbox2 h-[8rem] w-[8rem] bg-orange '></div>
+        <div className='Tnbox2 h-[8rem] w-[8rem] bg-orange '></div>
       </div></div>
     </>
     // <>
