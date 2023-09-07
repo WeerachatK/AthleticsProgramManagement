@@ -6,22 +6,21 @@ import { useSelector } from 'react-redux';
 function Root() {
   const display = useSelector(state => state.display);
   return (
-    <nav className='Navbar w-screen h-[100px] bg-[#D9D9D9] sticky top-0 pt-[12px] px-[24px] flex flex-row z-10 '>
-      <div class="flex flex-col justify-center w-[122px] h-[74px] flex-shrink-0 bg-[#525252]">
-        <label class="text-center font-inter text-base font-normal text-[#fff] ">
+    <nav className='Navbar h-16 bg-[#002880] sticky top-0 pt-[12px] px-[24px] flex flex-row z-10 '>
+      <div className="flex flex-col justify-center w-[7rem]  flex-shrink-0 bg-[#525252]">
+        <label className="text-center font-inter text-base font-normal text-[#fff] ">
           LOGO
         </label>
       </div>
 
-      <div className='Menu flex flex-row items-end pl-[100px]'>
-        <Link to="/" class={`Home MenuBox ${display === 'home' ? 'bg-white' : ''}`}>
+      <div className='Menu flex flex-row items-end pl-[100px] font-inter font-light text-[#fff]'>
+        <Link to="/" className={`Home MenuBox flex flex-col  ${display === 'home' ? 'font-semibold  bg-menu-blue justify-end' : ''}`}>
           Home
+          {display === 'home' && <LineHighlight/>}
         </Link>
-        <Link to="/competition" class={`Competition MenuBox ${display === 'competition' ? 'bg-white' : ''}`}>
+        <Link to="/competition" className={`Competition MenuBox flex flex-col  ${display === 'competition' ? 'font-semibold bg-menu-blue justify-end' : ''}`}>
           Competition
-        </Link>
-        <Link to="/result" class={`Result MenuBox ${display === 'result' ? 'bg-white' : ''}`}>
-          Result
+          {display === 'competition' && <LineHighlight/>}
         </Link>
       </div>
 
@@ -31,6 +30,12 @@ function Root() {
 }
 
 export default Root;
+function LineHighlight() {
+  return (<div className='Line flex flex-col  items-center mb-2'>
+    <div className='bg-white h-[0.1rem]  w-[8.125rem]  '></div>
+    <div className='bg-white h-[0.2rem] w-[10.625rem] mt-1 '></div>
+  </div>)
+}
 
 function Profile() {
   return (
@@ -62,12 +67,12 @@ function Profile() {
 
 function NoLogin() {
   return (
-    <div className='NoLogin w-full flex items-center justify-end mr-4'>
-      <div className='w-[225px] h-[53px] rounded-full bg-[#4C4C4C] flex items-center justify-center'>
+    <Link to="/login" className='NoLogin w-full flex items-center justify-end mr-14'>
+      <div className='rounded-full bg-[#004CEE] flex items-center justify-center font-inter px-6 p-1'>
         <label class="text-center font-inter text-base font-normal text-[#fff] ">
           Login/ Sign up
         </label>
       </div>
-    </div>
+    </Link>
   )
 }

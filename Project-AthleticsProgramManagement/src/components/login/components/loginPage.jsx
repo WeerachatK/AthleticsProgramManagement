@@ -1,34 +1,15 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import Img from '../../../assets/images/loginImg'
-import './index.css'
+import runningImg from '../../../assets/images/loginImg'
+import './login.css'
 function LoginPage() {
   return (
     <>
-      <body className="h-screen  flex items-center justify-center">
-        <div className="Content w-[1222px] h-[500px] flex-shrink-0 color-g flex flex-row">
-          <setion className='LoGo relative'>
-            <div className='PositionImg absolute pl-[148px] pt-[40px]'>
-              <Routes>
-                <Route path='/' element={
-                  <nav><Img /></nav>
-                } />
-              </Routes>
-            </div>
-            <div className='PositionText absolute pl-[88px] pt-[210px]'>
-              <div className='Text flex flex-col'>
-                <label class="text-shadow text-[100px] italic font-[900]">
-                  Athletics
-                </label>
-                <label class="text-shadow text-[40px] italic font-[900]">
-                  Program Management
-                </label>
-              </div>
-            </div>
-
-          </setion>
+      <body className="h-screen flex items-center justify-center">
+          <div className=' bg-blue w-8 h-8'></div>
+          <img src={runningImg} alt="Web logo Athletics Program Management"/>
           <div className='Blank'></div>
-          <section className='LoginMenu flex flex-col justify-center items-center w-[611px]'>
+          {/* <section className='LoginMenu flex flex-col justify-center items-center w-[611px]'>
             <div className='UserLogin flex flex-col items-center'>
               <label className='text-shadow text-[40px] font-[900]'>
                 User Login
@@ -43,7 +24,7 @@ function LoginPage() {
                     </svg>
                   </div>
                   <div className='Input flex flex-col ml-[60px]'>
-                    <label className='ml-[30px] mb-[1px] mt-[40px]'>Name - Last name</label>
+                    <label className='ml-[30px] mb-[1px] mt-[40px] text-white'>Name - Last name</label>
                     <input
                       class="w-[345px] h-[40px] bg-white text-gray-500 italic placeholder-gray-500 pl-[30px] rounded-md"
                       type="text"
@@ -61,7 +42,7 @@ function LoginPage() {
                     </svg>
                   </div>
                   <div className='Input flex flex-col ml-[60px]'>
-                    <label className='ml-[30px] mb-[1px] mt-[26px]'>Password</label>
+                    <label className='ml-[30px] mb-[1px] mt-[26px] text-white'>Password</label>
                     <input
                       class="w-[345px] h-[40px] bg-white text-gray-500 italic placeholder-gray-500 pl-[30px] rounded-md"
                       type="text"
@@ -88,10 +69,21 @@ function LoginPage() {
               </div>
 
             </div>
-          </section>
-        </div>
+          </section> */}
+
       </body>
     </>
   )
 }
 export default LoginPage
+
+{/* <div className='PositionText absolute pl-[88px] pt-[210px]'>
+<div className='Text flex flex-col'>
+  <label class="text-shadow text-[100px] italic font-[900]">
+    Athletics
+  </label>
+  <label class="text-shadow text-[40px] italic font-[900]">
+    Program Management
+  </label>
+</div>
+</div> */}

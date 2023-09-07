@@ -10,21 +10,20 @@ import IndexResultPage from './components/resultPage/index';
 import Root from './routes/root';
 import { useEffect } from 'react';
 
-
 function Main() {
-    useEffect(() => {
-        const script = document.createElement('script');
+    // useEffect(() => {
+    //     const script = document.createElement('script');
     
-        script.src = "https://cdn.userway.org/widget.js";
-        script.setAttribute("data-account", "wYYQPFqczm");
-        script.async = true;
+    //     script.src = "https://cdn.userway.org/widget.js";
+    //     script.setAttribute("data-account", "wYYQPFqczm");
+    //     script.async = true;
     
-        document.body.appendChild(script);
+    //     document.body.appendChild(script);
     
-        return () => {
-          document.body.removeChild(script);
-        }
-      }, []);
+    //     return () => {
+    //       document.body.removeChild(script);
+    //     }
+    //   }, []);
     return (<Provider store={store}>
         <Router>
                 <App />

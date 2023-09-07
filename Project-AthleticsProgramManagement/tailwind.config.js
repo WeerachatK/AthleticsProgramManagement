@@ -22,10 +22,12 @@ module.exports = {
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
+      'menu-blue': 'rgba(0, 82, 255, 0.30)',
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      inter: ['Inter', 'sans-serif'],
     },
     extend: {
       spacing: {
