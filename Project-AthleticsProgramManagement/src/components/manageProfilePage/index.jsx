@@ -11,7 +11,7 @@ function Index() {
     }, [dispatch]);
     return (
         <>
-        <h1>manage Profile</h1>
+        <h1>manage Profile hhh</h1>
         <Profile/>
         </>
     )
