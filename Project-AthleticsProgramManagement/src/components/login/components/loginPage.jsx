@@ -1,15 +1,16 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import runningImg from '../../../assets/images/loginImg'
+import runningImg from './running.png'
+// import runningImg from '../../../assets/images/'
 import './login.css'
 function LoginPage() {
   return (
     <>
-      <body className="h-screen flex items-center justify-center">
-          <div className=' bg-blue w-8 h-8'></div>
-          <img src={runningImg} alt="Web logo Athletics Program Management"/>
+      <div className="h-calc flex items-center justify-center bg-blue-gradient overflow-hidden">
+          <img className='h-[80%]'
+          src={runningImg} alt="Web logo Athletics Program Management"/>
           <div className='Blank'></div>
-          {/* <section className='LoginMenu flex flex-col justify-center items-center w-[611px]'>
+          <section className='LoginMenu flex flex-col justify-center items-center w-[611px] absolute right-[0px] '>
             <div className='UserLogin flex flex-col items-center'>
               <label className='text-shadow text-[40px] font-[900]'>
                 User Login
@@ -69,9 +70,9 @@ function LoginPage() {
               </div>
 
             </div>
-          </section> */}
+          </section>
 
-      </body>
+      </div>
     </>
   )
 }

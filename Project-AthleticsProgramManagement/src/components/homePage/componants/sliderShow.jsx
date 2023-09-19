@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './slider.css'
 
 const news = [News1, News2, News3, News4];
-// , News2, News3, News4
+// 
 let hText = "USA take over number two in World Ranking";
 const colors = ["#0088FE", "#00C49F", "#FFBB28", "#00C49F"];
 const delay = 2500;
@@ -46,17 +46,18 @@ function SlideShow() {
               leading-normal  bottom-[240px] left-[77px]  truncate ">
                 {hText}
               </div>
-
-              <button className="flex w-[251px] h-[76px] p-0 px-4 justify-center items-center space-x-1 flex-shrink-0 
-              rounded-lg border border-white absolute bottom-[140px] left-[192px]">
-                <div class="text-[#FC563D] font-inter text-[30px] font-normal font-semibold leading-normal">
+              <button className="flex w-[251px] h-[76px] mb-[9%] px-4 justify-center items-center space-x-1 flex-shrink-0 
+              rounded-lg border border-white absolute bottom-0 left-[192px]">
+                <div class="text-[#FC563D] font-inter text-[30px] font-semibold leading-normal">
                   Read more . . .
                 </div>
               </button>
+              <div className='ING bg-gray h-screen-4rem w-full'>
+                <img className='inline-block h-full w-full object-cover'
+                  src='https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/ntg4t1lytzt11bzbnkqv'
+                  alt="People running to the finish line" />
+              </div>
 
-              <img className='inline-block h-full w-full'
-                src='https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/ntg4t1lytzt11bzbnkqv'
-                alt="People running to the finish line" />
             </div>
 
           </div>
@@ -83,9 +84,9 @@ function News1() {
   return (
     <>
       <div className='Slider'>
-        <img className='inline-block h-full w-full'
+        {/* <img className='inline-block h-full w-full object-cover'
           src='https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/ntg4t1lytzt11bzbnkqv'
-          alt="People running to the finish line" />
+          alt="People running to the finish line" /> */}
       </div>
     </>
   )
@@ -94,7 +95,7 @@ function News2() {
   return (
     <>
       <div className='Slider'>
-        <img src='https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/ntg4t1lytzt11bzbnkqv' alt="People running to the finish line" />
+        {/* <img src='https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/ntg4t1lytzt11bzbnkqv' alt="People running to the finish line" /> */}
       </div>
     </>
   )

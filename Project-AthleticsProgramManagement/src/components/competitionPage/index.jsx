@@ -13,14 +13,13 @@ function Index() {
 
     return (
         <>
-            <div className="flex h-full w-screen">
-                <div className='Filter bg-[#C5C5C5] w-[20%] flex flex-shrink-0 h-screen fixed top-[100px] left-0 '>
+            <div className="flex">
+                <div className='Filter bg-[#142E4F] text-white w-[20%] flex flex-shrink-0 h-screen-4rem  fixed top-[4rem] left-0 '>
                     <Filter />
                 </div>
                 <div className='Content ml-[20%]'>
                     <Content />
                 </div>
-
             </div>
         </>
     )
