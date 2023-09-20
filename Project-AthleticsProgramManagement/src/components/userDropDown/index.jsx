@@ -11,7 +11,7 @@ function Index() {
     }, [dispatch]);
     return (
         <>
-
+        <Test/>
         </>
     )
 }
