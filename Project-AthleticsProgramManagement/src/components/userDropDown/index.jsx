@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import { setDisplay } from '../../redux/slices/displaySlice';
+import Test from './component/test';
 
 function Index() {
     const dispatch = useDispatch();
@@ -10,6 +11,9 @@ function Index() {
     }, [dispatch]);
     return (
         <>
+        <h1>hello</h1>
+        <Test/>
+        <Test/>
         </>
     )
 }
