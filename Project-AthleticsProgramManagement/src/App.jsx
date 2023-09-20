@@ -13,12 +13,11 @@ function App() {
     <>
       <Root />
       <Routes>
-      <Route path="/" element={<IndexUserDropDown/>} />
-      
-        {/* <Route path="/" element={<IndexHomePage />} />
-        <Route path="/competition" element={<IndexSchedulePage />} />
-        <Route path="/result" element={<IndexResultPage />} />
-        <Route path="/login" element={<IndexLoginPage />} />  */}
+      <Route path="/" element={<IndexHomePage />} />
+      <Route path="/usercenter" element={<IndexUserDropDown/>} />
+      <Route path="/competition" element={<IndexSchedulePage />} />
+      <Route path="/result" element={<IndexResultPage />} />
+      <Route path="/login" element={<IndexLoginPage />} /> 
       </Routes>
     </>
   )
