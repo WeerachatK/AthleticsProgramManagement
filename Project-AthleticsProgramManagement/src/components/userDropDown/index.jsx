@@ -11,9 +11,7 @@ function Index() {
     }, [dispatch]);
     return (
         <>
-        <h1>hello</h1>
-        <Test/>
-        <Test/>
+
         </>
     )
 }
