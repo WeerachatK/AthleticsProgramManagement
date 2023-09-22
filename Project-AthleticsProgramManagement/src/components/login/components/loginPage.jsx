@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import runningImg from './running.png'
+import GLogin from './googleLogin'
 // import runningImg from '../../../assets/images/'
 import './login.css'
 function LoginPage() {
@@ -54,7 +55,9 @@ function LoginPage() {
                 </div>
               </div>
               <line className='w-[470px] h-[3px] bg-[#fff] mt-[54px]' />
-              <div className='GoogleLogin w-full flex justify-end flex-row'>
+              <br />
+              <GLogin/>
+              {/* <div className='GoogleLogin w-full flex justify-end flex-row'>
                 <div className='Label flex flex-col items-end mt-[30px] mr-[10px] text-white text-shadow'>
                   <label>Login with</label>
                   <label>Google</label>
@@ -67,7 +70,7 @@ function LoginPage() {
                     <path d="M9.08638 22.605C8.70885 21.4794 8.50442 20.2731 8.50442 19.0175C8.50442 17.7809 8.7027 16.5922 9.06932 15.4813L2.70039 10.5546C1.42951 13.102 0.738892 15.973 0.738892 19.0175C0.738892 22.054 1.44248 24.9182 2.69639 27.4568L9.08638 22.605Z" fill="#FBBC05" />
                   </svg>
                 </div>
-              </div>
+              </div> */}
 
             </div>
           </section>
