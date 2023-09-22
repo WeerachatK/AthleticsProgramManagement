@@ -55,6 +55,7 @@ function SlideShow() {
               <div className='ING bg-gray h-screen-4rem w-full'>
                 <img className='inline-block h-full w-full object-cover'
                   src='https://img.olympicchannel.com/images/image/private/t_16-9_640/f_auto/v1538355600/primary/ntg4t1lytzt11bzbnkqv'
+                  // src='https://cdn2.vectorstock.com/i/1000x1000/14/06/running-athletes-sport-and-competition-background-vector-22681406.jpg'
                   alt="People running to the finish line" />
               </div>
 
