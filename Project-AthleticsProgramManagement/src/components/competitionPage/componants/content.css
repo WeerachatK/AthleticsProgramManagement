@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+.container-content{
+    display:flex;
+    flex-direction: column;
+    border: red solid;
+    height: 100%;
+}
+.container-content .content-filter{
+
+    display: flex;
+    flex-direction:  column;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.content-filter .filter-day{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.line{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.line-item1{
+    margin-bottom: 30px;
+}
+.line-item2{
+    margin-top: 30px;
+}
+.content-filter .filter-event{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content-event{
+    border: red solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content:space-evenly;
+}
+.card-container{
+    margin: 20px;
+    border: #002880 solid;
+    width: 16rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+}
+.card-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #002880;
+    font-weight: bold;
+}
+.card-foot .date{
+    color: white;
+}
+.card-foot .sport-name{
+    color: white;
+    background-color: #002880;
+}
