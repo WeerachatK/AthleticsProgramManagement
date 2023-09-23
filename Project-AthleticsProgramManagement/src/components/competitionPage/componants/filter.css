@@ -1,0 +1,70 @@
+*{
+    
+    box-sizing: border-box;
+}
+.container-filter{
+    overflow: hidden;
+    height: 100%;
+    min-height: 935px;
+    background-color: #142E4F;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.sport-container{
+    min-height: 30%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.sport-container h1{
+    margin-top: 10%;
+    border-bottom: white solid;
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    color: white;
+}
+.sport-container .sport-item{
+
+    color:  white;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.sport-item:hover{
+    border-bottom: white solid 3px;
+    background: #a6a2b5;
+    color:  black;
+    font-weight: bold;
+}
+.map-container{
+    justify-content: flex-end;
+
+    flex-direction: column;
+    padding-bottom: 0px;
+
+
+}
+.map-container .map-image{
+
+    width: fit-content;
+    margin: 5%;
+}
+.map-text{
+    margin: 5%;
+    color:  white;
+}
+.map-location{
+    font-weight: bold;
+    font-size: 25px;
+}
+.map-subscrib{
+    font-size: 15px;
+}

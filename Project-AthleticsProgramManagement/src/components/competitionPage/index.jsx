@@ -3,6 +3,7 @@ import Filter from './componants/filter';
 import Content from './componants/content';
 import { useDispatch } from 'react-redux';
 import { setDisplay } from '../../redux/slices/displaySlice';
+import "./index.css"
 
 function Index() {
     const dispatch = useDispatch();
@@ -13,11 +14,11 @@ function Index() {
 
     return (
         <>
-            <div className="flex">
-                <div className='Filter bg-[#142E4F] text-white w-[20%] flex flex-shrink-0 h-screen-4rem  fixed top-[4rem] left-0 '>
+            <div className="index-body">
+                <div className='filter-container'>
                     <Filter />
                 </div>
-                <div className='Content ml-[20%]'>
+                <div className='content-container'>
                     <Content />
                 </div>
             </div>

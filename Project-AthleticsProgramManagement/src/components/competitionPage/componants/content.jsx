@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./content.css"
 function Content() {
     return (
         <>
@@ -29,7 +29,11 @@ function Content() {
                 <TournamentCard />
                 <TournamentCard />
                 <TournamentCard />
+                <TournamentCard />               
                 <TournamentCard />
+                <TournamentCard />               
+                <TournamentCard />
+                <TournamentCard />               
                 <TournamentCard />
             </div>
         </>
@@ -40,6 +44,7 @@ export default Content
 
 function TournamentCard() {
     return (
+        <a href='#'>
         <div className='Tournament w-[16rem] h-[18rem] font-inter justify-between flex flex-col
         border-solid border-2 border-[#002880] flex-shrink-0 m-12'>
             <div className='CardHeader text-[#002880] font-bold flex justify-between px-2 py-1'>
@@ -61,6 +66,7 @@ function TournamentCard() {
                 </div>
             </div>
         </div>
+        </a>
     )
 }
 
