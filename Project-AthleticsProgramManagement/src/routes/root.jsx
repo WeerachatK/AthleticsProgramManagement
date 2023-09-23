@@ -39,6 +39,7 @@ function LineHighlight() {
 function Profile() {
   return (
     <ul className='user-profile'>
+      <div className='user-manage'><Link to="/usermanagement">User Management</Link></div>
       <a href="#"><li className='user-noti'>
       <svg width="29" height="37" className='mx-[30px]'
          viewBox="0 0 29 37" fill="none"
