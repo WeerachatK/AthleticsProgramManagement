@@ -6,11 +6,11 @@ import { setDisplay } from '../../redux/slices/displaySlice';
 import "./index.css"
 
 function Index() {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    React.useEffect(() => {
-        dispatch(setDisplay('competition'));
-    }, [dispatch]);
+    // React.useEffect(() => {
+    //     dispatch(setDisplay('competition'));
+    // }, [dispatch]);
 
     return (
         <>

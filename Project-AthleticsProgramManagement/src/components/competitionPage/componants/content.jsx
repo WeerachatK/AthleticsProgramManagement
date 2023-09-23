@@ -38,6 +38,13 @@ function Content() {
             <TournamentCard />
             <TournamentCard />
             <TournamentCard />
+            <TournamentCard />
+            <TournamentCard />
+            <TournamentCard />
+            <TournamentCard />
+            <TournamentCard />
+            <TournamentCard />
+            
             </div>
         </div>
     )
@@ -76,7 +83,7 @@ function Line() {
 
 function ButtonDay() {
     return (
-        <button class="m-1 flex w-20 h-10 px-4 justify-center items-center space-x-1 flex-shrink-0 rounded-md border border-blue-900 bg-transparent">
+        <button  class="but m-1 flex w-20 h-10 px-4 justify-center items-center space-x-1 flex-shrink-0 rounded-md border border-blue-900 bg-transparent">
             All
         </button>
     )

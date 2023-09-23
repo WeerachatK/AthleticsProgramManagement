@@ -12,9 +12,7 @@ function Index() {
     }, [dispatch]);
     return (
         <>
-            <div className="">
                 <SlideShow />
-            </div>
         </>
     )
 }

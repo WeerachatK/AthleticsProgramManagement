@@ -10,6 +10,9 @@ function Filter() {
             <div className='sport-item'><a href="">Track Events</a></div>
             <div className='sport-item'><a href="">Road Races</a></div>
             <div className='sport-item'><a href="">Field Events</a></div>
+            <div className='sport-item'><a href="">The Sprints</a></div>
+            <div className='sport-item'><a href="">Combined Competitions</a></div>
+            <div className='sport-item'><a href="">Cross-Country Races</a></div>
         </div>
         <div v className='map-container'>
           <div className="map-image">

@@ -13,14 +13,15 @@
 
 .navBar{
   border-bottom: black solid 3px;
-  padding-left: 0%;
+  width: 100%;
+  padding-left: 3%;
   padding-right: 7%;
-  position:sticky;
   background: #002880;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  float: none;
+  position: sticky;
 }
 .menu-bar{
   margin-left: 50px;
@@ -40,6 +41,7 @@
 }
 .menu-item:hover{
   background-color:gray;
+  text-decoration: underline;
 }
 .menu-item:active{
   background-color: gray;
@@ -49,7 +51,6 @@ background:#f0f0f0;
 color: black;
 }
 .user-bar{
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -62,9 +63,10 @@ color: black;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-right: 10px;
+
 }
 .user-profile .user-noti{
+
   margin-right: 5px;
 }
 .user-profile .user{
@@ -74,7 +76,6 @@ color: black;
   align-items: center;
   padding-top: 7px;
   padding-bottom: 7px;
-  border: red solid;
 
 }
 .user .user-image{
@@ -92,22 +93,6 @@ color: black;
   margin-left: 10px;
   margin-right: 10px;
 }
-.user .sub-menu {
-  display: none;
-  position:absolute;
-    background-color: #f3f3f3;
-
-}
-
-.user:hover .sub-menu{
-  display: grid;
-
-}
-.sub-menu li{
-  float:none;
-  display: grid;
-}
-
 .user-no-login{
   text-align: end;
   color: black;

@@ -53,7 +53,13 @@
     flex-direction: column;
     justify-content:  space-between;
 }
+.card-container:hover{
+    box-shadow: 5px 10px #8888;
+    
+}
 .card-head{
+    margin-left: 5px;
+    margin-right: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,5 +71,10 @@
 }
 .card-foot .sport-name{
     color: white;
+    padding-top: 15px;
     background-color: #002880;
+}
+.but:hover{
+    background-color: #002880;
+    color:  white;
 }
