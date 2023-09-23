@@ -65,6 +65,19 @@ color: black;
   justify-content: space-between;
 
 }
+.user-manage{
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 25px;
+  font-weight:bolder;
+  text-align: center;
+  color: white;
+}
+.user-manage:hover{
+  background-color:gray;
+  text-decoration: underline;
+}
 .user-profile .user-noti{
 
   margin-right: 5px;
