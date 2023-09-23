@@ -4,7 +4,6 @@
 .container-content{
     display:flex;
     flex-direction: column;
-    border: red solid;
     height: 100%;
 }
 .container-content .content-filter{
@@ -38,7 +37,6 @@
     flex-wrap: wrap;
 }
 .content-event{
-    border: red solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

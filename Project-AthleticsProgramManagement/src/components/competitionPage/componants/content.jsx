@@ -38,7 +38,6 @@ function Content() {
             <TournamentCard />
             <TournamentCard />
             <TournamentCard />
-            <TournamentCard />
             </div>
         </div>
     )
