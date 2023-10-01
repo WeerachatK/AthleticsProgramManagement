@@ -10,6 +10,6 @@ export const filterSlice = createSlice({
   },
 });
 
-// ส่งออก actions และ reducer
+
 export const { setFilter } = filterSlice.actions;
 export default filterSlice.reducer;
