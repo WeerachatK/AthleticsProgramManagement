@@ -42,7 +42,7 @@ module.exports = {
         '4xl': '2rem',
       },
       height: {
-        'screen-4rem': 'calc(100vh - 4rem)',
+        'screen-nav': 'calc(100vh - 3.5rem)',
       },
     }
   },
