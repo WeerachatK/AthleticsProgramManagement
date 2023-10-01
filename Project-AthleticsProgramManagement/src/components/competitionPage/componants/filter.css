@@ -1,73 +1,90 @@
-*{
-    
+* {
     box-sizing: border-box;
 }
-.container-filter{
+
+.container-filter {
     overflow: hidden;
-    height: 100%;
-    min-height: 935px;
     background-color: #142E4F;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    position:sticky;
+    position: sticky;
 }
-.sport-container{
+
+.sport-container {
     min-height: 30%;
     display: flex;
     flex-direction: column;
 
 }
-.sport-container h1{
+
+.sport-container h1 {
     margin-top: 10%;
     border-bottom: white solid;
-    font-size: 30px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
     color: white;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
-.sport-container .sport-item{
-    color:  white;
+
+.sport-container .sport-item {
+    color: white;
     margin-top: 2%;
     margin-right: 10%;
     margin-left: 10%;
-    font-size: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
-.sport-item:hover{
+
+.sport-item:hover {
+    padding: 5px;
     border-bottom: rgb(255, 255, 255) solid 3px;
-    background: rgb(0,40,128);
-    background: linear-gradient(90deg, rgba(0,40,128,1) 7%, rgba(152,149,204,1) 100%);
-    color:  rgb(255, 255, 255);
-    font-weight: bold;
+    background: rgb(0, 40, 128);
+    background: linear-gradient(90deg, rgba(0, 82, 255, 0.70) 0%, rgba(0, 82, 255, 0.00) 100%);
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
 }
-.sport-item:active{
-    background-color: black;
-    color: white;
+
+.sport-item-active {
+    padding: 2px;
+    border-bottom: rgb(255, 255, 255) solid 3px;
+    background: rgb(0, 40, 128);
+    background: linear-gradient(90deg, rgba(0, 82, 255, 0.70) 0%, rgba(0, 82, 255, 0.00) 100%);
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
 }
-.map-container{
+
+.map-container {
     justify-content: space-between;
     flex-direction: column;
     padding-bottom: 0px;
-
-
 }
-.map-container .map-image{
+
+.map-container .map-image {
 
     width: fit-content;
     margin: 5%;
     margin-top: 10%;
 }
-.map-text{
+
+.map-text {
     margin: 5%;
-    color:  white;
+    color: white;
 }
-.map-location{
+
+.map-location {
     font-weight: bold;
     font-size: 20px;
 }
-.map-subscrib{
+
+.map-subscrib {
     font-size: 10px;
-   
+
 }
