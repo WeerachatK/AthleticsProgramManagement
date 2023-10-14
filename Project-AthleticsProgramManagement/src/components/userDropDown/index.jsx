@@ -1,17 +1,10 @@
 import React from 'react'
-import { useDispatch } from 'react-redux';
-import { setDisplay } from '../../redux/slices/displaySlice';
-import Test from './component/test';
+import UserDropDown from './component/userDropDown';
 
 function Index() {
-    const dispatch = useDispatch();
-
-    React.useEffect(() => {
-        dispatch(setDisplay(''));
-    }, [dispatch]);
     return (
         <>
-        <Test/>
+        <UserDropDown/>
         </>
     )
 }

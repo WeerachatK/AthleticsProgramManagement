@@ -15,9 +15,9 @@ function Index() {
     return (
         <>
             <div className="index-body">
-                <div className='Filter bg-[#142E4F] text-white w-[20%] flex flex-shrink-0 h-screen-nav  fixed  left-0'>
+                {/* <div className='Filter bg-[#142E4F] text-white w-[20%] flex flex-shrink-0 h-screen-nav fixed  left-0'>
                     <Filter />
-                </div>
+                </div> */}
                 <blank className='w-[20%]'/>
                 <div className='content-container'>
                     <Content />

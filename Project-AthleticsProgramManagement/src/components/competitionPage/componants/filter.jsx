@@ -13,7 +13,7 @@ function Filter() {
   };
   return (
     <>
-      <div className='flex flex-col justify-between'>
+      <div className='flex flex-col justify-between fixed bg-[#142E4F] left-0 w-[20%] h-screen-nav'>
         <div className='sport-container'>
           <h1>Sports type</h1>
           <a className={`sport-item ${filter === 'All' ? 'sport-item-active' : ''}`} href="" onClick={handleFilterClick}>All</a>
