@@ -6,7 +6,6 @@ import store from './redux/store';
 import App from './App';
 import IndexHomePage from './components/homePage/index';
 import IndexSchedulePage from './components/competitionPage/index';
-import IndexResultPage from './components/resultPage/index';
 import Root from './routes/root';
 import { useEffect } from 'react';
 
