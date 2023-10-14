@@ -26,7 +26,7 @@ function EventsListComponents() {
   )
 }
 
-function UserDropDown() {
+function UserDropDown({handleClick}) {
   const [EventsListOpen, setEventsListOpen] = useState(false);
   const handleEventsListClick = () => {
     setEventsListOpen(!EventsListOpen);
@@ -34,11 +34,13 @@ function UserDropDown() {
   return (
     <>
       <div className={`fixed flex flex-col w-[25%] bg-[#002880] right-0 z-50 text-white ${EventsListOpen ? 'h-screen-nav' : ''}`}>
-        <div className='My-Profile w-full h-[50px] pr-4 pl-4 flex-shrink-0'>
-          <div className='w-full h-full flex items-center justify-center border-t border-white'>
-            Manage profile
+        <Link to='/profile' onClick={handleClick}>
+          <div className='My-Profile w-full h-[50px] pr-4 pl-4 flex-shrink-0'>
+            <div className='w-full h-full flex items-center justify-center border-t border-white'>
+              Manage profile
+            </div>
           </div>
-        </div>
+        </Link>
         <div className='My-Event w-full h-full pr-4 pl-4' onClick={handleEventsListClick}>
           <div className='w-full h-[50px] flex items-center justify-center border-t border-white relative'>
             My events list
@@ -46,7 +48,7 @@ function UserDropDown() {
           </div>
           {/* <EventsListComponents/> */}
         </div>
-        < Link to="/login">
+        <Link to="/login" onClick={handleClick}>
           <div className='Logout w-full bg-[#002D98] h-[30px] flex items-center justify-center'>
             Logout
           </div>

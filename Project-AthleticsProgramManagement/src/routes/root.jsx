@@ -94,7 +94,7 @@ function Root() {
           {profile ? <Profile profileData={profile} onDropdownClick={handleDropdownClick} DropdownOpen={isUserDropdownOpen}/> : <NoLogin />}
         </div>
       </nav>
-      {isUserDropdownOpen && <UserDropdown />}
+      {isUserDropdownOpen && <UserDropdown handleClick = {handleDropdownClick}/>}
       {display === 'competition' && <Filter />}
     </>
   );

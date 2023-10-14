@@ -1,10 +1,10 @@
 import React from 'react'
 import UserDropDown from './component/userDropDown';
 
-function Index() {
+function Index( {handleClick} ) {
     return (
         <>
-        <UserDropDown/>
+        <UserDropDown handleClick = {handleClick}/>
         </>
     )
 }
