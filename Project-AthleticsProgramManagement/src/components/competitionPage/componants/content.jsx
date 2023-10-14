@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./content.css"
 function Content() {
     return (
@@ -54,7 +55,7 @@ export default Content
 
 function TournamentCard() {
     return (
-        <a href="#">
+        <Link to='/competition/event'>
             <div className='card-container'>
                 <div className='card-head'>
                     <div className='time'>1.00 PM</div>
@@ -71,7 +72,7 @@ function TournamentCard() {
                     <div className='sport-name h-14 px-2 py-1 text-lg'>Javelin Throw Final</div>
                 </div>
             </div>
-        </a>
+        </Link>
     )
 }
 

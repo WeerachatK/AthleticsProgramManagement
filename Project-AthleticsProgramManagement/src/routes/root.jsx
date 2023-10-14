@@ -4,6 +4,7 @@ import './root.css'
 import { useSelector } from 'react-redux';
 import UserDropdown from '../components/userDropDown/index';
 import Filter from '../components/competitionPage/componants/filter';
+import EventFilter from '../components/eventPage/componants/eventFilter'
 
 
 
@@ -82,20 +83,21 @@ function Root() {
         </Link>
         <div className=' flex flex-row justify-between w-full'>
           <div className='Menu pt-[12px] flex flex-row items-end pl-[100px] font-inter font-light text-[#fff]'>
-            <Link to="/" className={`Home MenuBox flex flex-col  ${display === 'home' ? 'font-semibold  bg-menu-blue justify-end' : ''}`}>
+            <Link to="/" className={`Home MenuBox flex flex-col  ${display === 'home' && 'font-semibold  bg-menu-blue justify-end'}`}>
               Home
               {display === 'home' && <LineHighlight />}
             </Link>
-            <Link to="/competition" className={`Competition MenuBox flex flex-col  ${display === 'competition' ? 'font-semibold bg-menu-blue justify-end' : ''}`}>
+            <Link to="/competition" className={`Competition MenuBox flex flex-col  ${(display === 'competition' || display === 'event') && 'font-semibold bg-menu-blue justify-end'}`}>
               Competition
-              {display === 'competition' && <LineHighlight />}
+              {(display === 'competition' || display === 'event') && <LineHighlight />}
             </Link>
           </div>
           {profile ? <Profile profileData={profile} onDropdownClick={handleDropdownClick} DropdownOpen={isUserDropdownOpen}/> : <NoLogin />}
         </div>
       </nav>
       {isUserDropdownOpen && <UserDropdown handleClick = {handleDropdownClick}/>}
-      {display === 'competition' && <Filter />}
+      {(display === 'competition') && <Filter />}
+      {(display === 'event') && <EventFilter />}
     </>
   );
 }

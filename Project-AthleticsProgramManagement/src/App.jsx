@@ -1,7 +1,7 @@
 import React from 'react';
 import IndexHomePage from './components/homePage/index';
 import IndexSchedulePage from './components/competitionPage/index';
-import IndexResultPage from './components/resultPage/index';
+import IndexEventPage from './components/eventPage/index';
 import IndexLoginPage from './components/login/index';
 import IndexManageProfile from './components/manageProfilePage/index'
 import IndexUserDropDown from './components/userDropDown/index';
@@ -18,7 +18,7 @@ function App() {
       {/* <Route path="/userdropdown" element={<IndexUserDropDown/>} /> */}
       <Route path="/profile" element={<IndexManageProfile/>} />
       <Route path="/competition" element={<IndexSchedulePage />} />
-      <Route path="/result" element={<IndexResultPage />} />
+      <Route path="/competition/event" element={<IndexEventPage />} />
       <Route path="/login" element={<IndexLoginPage />} /> 
       </Routes>
     </>
