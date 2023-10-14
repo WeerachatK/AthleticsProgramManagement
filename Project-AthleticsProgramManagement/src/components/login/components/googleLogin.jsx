@@ -39,7 +39,6 @@ function LoginG(){
             <br /><br />
             {localProfile ? ( 
                 <div>
-                    <img src={localProfile.imageUrl} alt="" />
                     <h3>Login Success</h3>
                     <br /><br />
                     <GoogleLogout clientId={clientId} buttonText='Log Out' onLogoutSuccess={logOut} />
