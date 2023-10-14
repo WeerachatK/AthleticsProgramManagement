@@ -8,7 +8,7 @@ function Index() {
     const dispatch = useDispatch();
 
     React.useEffect(() => {
-        dispatch(setDisplay(''));
+        dispatch(setDisplay('profile'));
     }, [dispatch]);
     return (
         <>

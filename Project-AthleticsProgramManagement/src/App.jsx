@@ -15,8 +15,8 @@ function App() {
       <Root />
       <Routes>
       <Route path="/" element={<IndexHomePage />} />
-      <Route path="/userdropdown" element={<IndexUserDropDown/>} />
-      <Route path="/usermanagement" element={<IndexManageProfile/>} />
+      {/* <Route path="/userdropdown" element={<IndexUserDropDown/>} /> */}
+      <Route path="/profile" element={<IndexManageProfile/>} />
       <Route path="/competition" element={<IndexSchedulePage />} />
       <Route path="/result" element={<IndexResultPage />} />
       <Route path="/login" element={<IndexLoginPage />} /> 
