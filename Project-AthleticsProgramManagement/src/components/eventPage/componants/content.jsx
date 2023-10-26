@@ -11,7 +11,7 @@ function Content() {
        <>
        {eventDisplay === 'start-list' && <StartList/>}
        {eventDisplay === 'result' && <Result/>}
-       {eventDisplay === 'official' && <StartList/>}
+       {/* {eventDisplay === 'official' && <StartList/>} */}
        </>
     )
 }

@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import "../../competitionPage/componants/filter.css"
 import { useSelector, useDispatch } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 import { setEventDisplay } from '../../../redux/slices/eventDisplaySlice';
 
 function EventFilter() {
+  const location = useLocation();
+  const event = location.state?.event;
   const eventDisplay = useSelector(state => state.eventDisplay);
   const dispatch = useDispatch();
 
@@ -15,7 +18,7 @@ function EventFilter() {
     <>
       <div className='flex flex-col justify-between fixed bg-[#142E4F] left-0 w-[20%] h-screen-nav'>
         <div className='sport-container'>
-          <h1>Event Name</h1>
+          <h1>{event?.eventName}</h1>
           <a className={`sport-item ${eventDisplay === 'start-list' && 'sport-item-active'}`}
             onClick={handleDisplayChange('start-list')}>
             Start List

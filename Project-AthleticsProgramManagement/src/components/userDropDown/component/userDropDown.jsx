@@ -44,7 +44,7 @@ function UserDropDown({handleClick}) {
         <div className='My-Event w-full h-full pr-4 pl-4' onClick={handleEventsListClick}>
           <div className='w-full h-[50px] flex items-center justify-center border-t border-white relative'>
             My events list
-            {EventsListOpen ? <ArrowDown /> : <ArrowUp />}
+            {EventsListOpen ? <ArrowUp /> : <ArrowDown />}
           </div>
           {/* <EventsListComponents/> */}
         </div>

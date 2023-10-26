@@ -2,24 +2,43 @@ import React from 'react'
 import "./filter.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { setFilter } from '../../../redux/slices/filterSlice';
+import { setSportFilter, selectSportFilter } from '../../../redux/slices/sportFilterSlice';
 function Filter() {
   const dispatch = useDispatch();
-  const filter = useSelector(state => state.filter);
+  const filter = useSelector(selectSportFilter);
 
-  const handleFilterClick = (event) => {
-    event.preventDefault();
-    const filterValue = event.target.innerText;
-    dispatch(setFilter(filterValue));
+  const handleFilterClick = (filterValue) => {
+    dispatch(setSportFilter(filterValue));
   };
   return (
     <>
       <div className='flex flex-col justify-between fixed bg-[#142E4F] left-0 w-[20%] h-screen-nav'>
         <div className='sport-container'>
           <h1>Sports type</h1>
-          <a className={`sport-item ${filter === 'All' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>All</a>
-          <a className={`sport-item ${filter === 'Track Events' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Track Events</a>
-          <a className={`sport-item ${filter === 'Road Races' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Road Races</a>
-          <a className={`sport-item ${filter === 'Field Events' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Field Events</a>
+          <div
+        className={`sport-item ${filter === 'All' && 'sport-item-active'}`}
+        onClick={() => handleFilterClick('All')}
+      >
+        All
+      </div>
+      <div
+        className={`sport-item ${filter === 'Track Events' && 'sport-item-active'}`}
+        onClick={() => handleFilterClick('Track Events')}
+      >
+        Track Events
+      </div>
+      <div
+        className={`sport-item ${filter === 'Road Races' && 'sport-item-active'}`}
+        onClick={() => handleFilterClick('Road Races')}
+      >
+        Road Races
+      </div>
+      <div
+        className={`sport-item ${filter === 'Field Events' && 'sport-item-active'}`}
+        onClick={() => handleFilterClick('Field Events')}
+      >
+        Field Events
+      </div>
           {/* <a className={`sport-item ${filter === 'The Sprints' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>The Sprints</a>
           <a className={`sport-item ${filter === 'Combined Competitions' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Combined Competitions</a>
           <a className={`sport-item ${filter === 'Cross-Country Races' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Cross-Country Races</a> */}

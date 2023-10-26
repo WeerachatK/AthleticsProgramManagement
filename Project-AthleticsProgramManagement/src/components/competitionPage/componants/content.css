@@ -1,63 +1,73 @@
-*{
+* {
     box-sizing: border-box;
 }
-.container-content{
-    display:flex;
+
+.container-content {
+    display: flex;
     flex-direction: column;
     height: 100%;
 }
-.container-content .content-filter{
+
+.container-content .content-filter {
 
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     margin-left: 5%;
     margin-top: 3%;
     margin-right: 5%;
 }
 
-.content-filter .filter-day{
+.content-filter .filter-day {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.line{
+
+.line {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.line-item1{
+
+.line-item1 {
     margin-bottom: 30px;
 }
-.line-item2{
+
+.line-item2 {
     margin-top: 30px;
 }
-.content-filter .filter-event{
+
+.content-filter .filter-event {
     margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.content-event{
+
+.content-event {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 5%;
     margin-right: 5%;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-.card-container{
+
+.card-container {
     margin: 20px;
     border: #002880 solid;
     width: 16rem;
     height: 18rem;
     display: flex;
     flex-direction: column;
-    justify-content:  space-between;
+    justify-content: space-between;
 }
-.card-container:hover{
+
+.card-container:hover {
     box-shadow: 5px 10px #8888;
-    
+
 }
-.card-head{
+
+.card-head {
     margin-left: 5px;
     margin-right: 5px;
     display: flex;
@@ -66,15 +76,38 @@
     color: #002880;
     font-weight: bold;
 }
-.card-foot .date{
+
+.card-foot .date {
     color: white;
 }
-.card-foot .sport-name{
+
+.card-foot .sport-name {
     color: white;
     padding-top: 15px;
     background-color: #002880;
 }
-.but:hover{
+
+.ButtonFilter {
+    margin: 0.25rem;
+    display: flex;
+    width: 6rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 0.375rem;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ButtonFilter:hover {
     background-color: #002880;
-    color:  white;
+    color: white;
+    
+}
+
+.useFilter {
+    background: linear-gradient(0deg, #B4C7F1 0%, #B4C7F1 100%), rgba(0, 0, 0, 0.00);
 }
