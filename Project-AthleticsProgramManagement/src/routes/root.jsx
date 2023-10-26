@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 import UserDropdown from '../components/userDropDown/index';
 import Filter from '../components/competitionPage/componants/filter';
 import EventFilter from '../components/eventPage/componants/eventFilter'
+import WebLogo from '../assets/images/Web-Logo2.svg'
 
 
 
@@ -45,7 +46,7 @@ function Profile({ profileData, onDropdownClick, DropdownOpen }) {
         </div>
 
         <label className=' text-white ' >{profileData.name}</label>
-        {DropdownOpen ? <ArrowUp/> : <ArrowDown />}
+        {DropdownOpen ? <ArrowUp /> : <ArrowDown />}
         {/* <UserDropdown /> */}
       </div>
     </>
@@ -78,8 +79,13 @@ function Root() {
     <>
       <nav className='Navbar h-14 bg-[#002880] sticky top-0 px-[24px] flex flex-row z-10 '>
         <Link to="/">
-          <img className=' absolute h-20 ' src="https://static.vecteezy.com/system/resources/thumbnails/023/654/784/small/golden-logo-template-free-png.png"
-            alt="" />
+          <div className="group">
+            <img
+              className="absolute h-20 group-hover:h-28 transition-height duration-300"
+              src={WebLogo}
+              alt="Logo"
+            />
+          </div>
         </Link>
         <div className=' flex flex-row justify-between w-full'>
           <div className='Menu pt-[12px] flex flex-row items-end pl-[100px] font-inter font-light text-[#fff]'>
@@ -92,10 +98,10 @@ function Root() {
               {(display === 'competition' || display === 'event') && <LineHighlight />}
             </Link>
           </div>
-          {profile ? <Profile profileData={profile} onDropdownClick={handleDropdownClick} DropdownOpen={isUserDropdownOpen}/> : <NoLogin />}
+          {profile ? <Profile profileData={profile} onDropdownClick={handleDropdownClick} DropdownOpen={isUserDropdownOpen} /> : <NoLogin />}
         </div>
       </nav>
-      {isUserDropdownOpen && <UserDropdown handleClick = {handleDropdownClick}/>}
+      {isUserDropdownOpen && <UserDropdown handleClick={handleDropdownClick} />}
       {(display === 'competition') && <Filter />}
       {(display === 'event') && <EventFilter />}
     </>
