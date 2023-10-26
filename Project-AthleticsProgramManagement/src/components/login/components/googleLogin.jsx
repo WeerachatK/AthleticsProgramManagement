@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { setProfile as setReduxProfile, clearProfile } from '../../../redux/slices/profileSlice';
 
 function LoginG(){
-    const clientId = "13073497204-u13c9a5kiak3cmriqqp160pat1skt3og.apps.googleusercontent.com";
+    const clientId = "13073497204-nqdf0845i6i512lpmurikfns0dbg707s.apps.googleusercontent.com";
     const dispatch = useDispatch();
     const [localProfile, setLocalProfile] = useState(null);  // ชื่อใหม่
 
