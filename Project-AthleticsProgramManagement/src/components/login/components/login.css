@@ -23,7 +23,3 @@
     overflow: hidden;
     background: linear-gradient(113deg, #E4F4FF 0.92%, #BAE4FF 12.06%, #66BAEA 24.51%, #2B78AF 52.04%, #002880 97.05%);
 }
-
-.h-calc {
-    height: calc(100vh - 4rem);
-}
