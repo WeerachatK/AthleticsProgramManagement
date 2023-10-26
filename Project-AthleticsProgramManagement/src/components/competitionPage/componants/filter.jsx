@@ -20,17 +20,18 @@ function Filter() {
           <a className={`sport-item ${filter === 'Track Events' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Track Events</a>
           <a className={`sport-item ${filter === 'Road Races' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Road Races</a>
           <a className={`sport-item ${filter === 'Field Events' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Field Events</a>
-          <a className={`sport-item ${filter === 'The Sprints' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>The Sprints</a>
+          {/* <a className={`sport-item ${filter === 'The Sprints' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>The Sprints</a>
           <a className={`sport-item ${filter === 'Combined Competitions' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Combined Competitions</a>
-          <a className={`sport-item ${filter === 'Cross-Country Races' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Cross-Country Races</a>
+          <a className={`sport-item ${filter === 'Cross-Country Races' && 'sport-item-active'}`} href="" onClick={handleFilterClick}>Cross-Country Races</a> */}
         </div>
         <div v className='map-container'>
           <div className="map-image">
-            <img src="https://www.google.com/maps/d/thumbnail?mid=1IiSZmA46ha-bnHijm9cdN-kwVwI&hl=en_US" alt="Description" className="object-cover w-full h-full" />
+            {/* <img src="https://www.google.com/maps/d/thumbnail?mid=1IiSZmA46ha-bnHijm9cdN-kwVwI&hl=en_US" alt="Description" className="object-cover w-full h-full" /> */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7830320328017!2d100.43658159678957!3d13.852058400000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b0f7bff3665%3A0x3a00557b9f0e2d47!2sNonthaburi%20Stadium!5e0!3m2!1sth!2sth!4v1698325079922!5m2!1sth!2sth" width="100%" height="300"></iframe>
           </div>
           <div className='map-text'>
-            <div className='map-location'> Central Stadium of Khon Kaen University</div>
-            <div className='map-subscrib' > Sila Subdistrict, Mueang Khon Kaen District Khon Kaen 40000</div>
+            <div className='map-location'> Nonthaburi Stadium</div>
+            <div className='map-subscrib' > 67/90 Bang Len Soi 15, Bang Len Subdistrict, Bang Yai District, Nonthaburi 11000</div>
           </div>
         </div>
       </div>
