@@ -30,8 +30,8 @@ function Filter() {
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3873.7830320328017!2d100.43658159678957!3d13.852058400000017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29b0f7bff3665%3A0x3a00557b9f0e2d47!2sNonthaburi%20Stadium!5e0!3m2!1sth!2sth!4v1698325079922!5m2!1sth!2sth" width="100%" height="300"></iframe>
           </div>
           <div className='map-text'>
-            <div className='map-location'> Nonthaburi Stadium</div>
-            <div className='map-subscrib' > 67/90 Bang Len Soi 15, Bang Len Subdistrict, Bang Yai District, Nonthaburi 11000</div>
+            <div className='map-location'>Nonthaburi Stadium</div>
+            <div className='map-subscrib' >67/90 Bang Len Soi 15, Bang Len Subdistrict, Bang Yai District, Nonthaburi 11000</div>
           </div>
         </div>
       </div>
