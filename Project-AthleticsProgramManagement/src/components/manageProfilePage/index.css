@@ -34,3 +34,8 @@
   white-space: nowrap;
   max-width: 100%;
 }
+
+input[type="text"]:disabled {
+    background-color: #FFF;
+    color: rgb(88, 88, 88);
+  }
